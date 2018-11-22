@@ -80,7 +80,7 @@ class TextForm extends Component {
       output_text: ""
     });
     alert('A New Phrase Was Submitted For Translation: ' + this.state.value);
-    fetch('http://127.0.0.1:8000/api/translations/', {
+    fetch('http://django-env.6gwinyghki.us-east-1.elasticbeanstalk.com/api/translations/', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -118,7 +118,7 @@ class Table extends Component {
 
   async componentDidMount() {
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/translations/');
+      const res = await fetch('http://django-env.6gwinyghki.us-east-1.elasticbeanstalk.com/api/translations/');
       const translations = await res.json();
       this.setState({
         translations
