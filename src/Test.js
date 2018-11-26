@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import translate from './translate.svg';
-// import './App.css';
+import './App.css';
 import ReactDOM from 'react-dom';
 
 
@@ -163,6 +163,7 @@ class InputForm extends Component {
   }
 }
 
+
 class Table extends Component {
   state = {
     translations: []
@@ -216,5 +217,6 @@ class Footer extends Component {
     );
   }
 }
+
 
 export default App
