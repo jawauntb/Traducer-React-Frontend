@@ -129,6 +129,9 @@ class InputForm extends Component {
   handleSubmit(event) {
     var text_in = JSON.stringify({
       input_text: this.state.value,
+      language: "",
+      output_text: ""
+
     });
     alert('A New Phrase Was Submitted For Translation: ' + this.state.value);
     fetch('http://django-env.6gwinyghki.us-east-1.elasticbeanstalk.com/api/translations/', {
